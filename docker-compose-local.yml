@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  django:
+    container_name: squid_backend
+    build:
+      context: .
+      dockerfile: ./docker/django/local/Dockerfile
+    command: /start.sh
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
