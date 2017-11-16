@@ -11,3 +11,14 @@ services:
       - ./backend:/app
     ports:
       - "8000:8000"
+
+  node:
+    container_name: squid_frontend
+    build:
+      context: .
+      dockerfile: ./docker/node/local/Dockerfile
+    command: /start.sh
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "3000:3000"
