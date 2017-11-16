@@ -2,3 +2,5 @@ Django==1.11.7
 pytz==2017.3
 djangorestframework==3.7.3
 django-filter==1.1.0
+PyJWT==1.5.3
+djangorestframework-jwt==1.11.0
